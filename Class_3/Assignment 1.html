@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>A sample page</title>
+  <script src="helper.js"></script>
+</head>
+
+<body>
+  <div id="main">
+
+  </div>
+  <script>
+	const result = window.prompt("Enter a month number");
+	const monthArray = ["January", "February", "March", "April", "May", "June", "July", "August",
+	"September", "October", "November", "December"];
+	let monthName = monthArray[result - 1];
+	alert(monthName);
+   
+  </script>
+</body>
+</html>
