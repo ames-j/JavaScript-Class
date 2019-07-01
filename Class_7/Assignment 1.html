@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+   (function () {
+ let zodiacPrompt = prompt("Please enter your birth year");
+ let promptNumber = parseInt(zodiacPrompt);
+ let zodiac = promptNumber % 12;
+ let nextYears = (promptNumber + 12) + " and " + (promptNumber + 24)
+ switch(zodiac) {
+  case 0: 
+ echo("Your Chinese Zodiac Year is the Monkey. The next birth years for your sign are " + nextYears);
+  break;
+ case 1:
+ echo("Your Chinese Zodiac Year is the Rooster. The next birth years for your sign are , " + nextYears);
+  break;
+ case 2:
+ echo("Your Chinese Zodiac Year is the Dog. The next birth years for your sign are " + nextYears);
+  break;
+ case 3:
+ echo("Your Chinese Zodiac Year is the Pig. The next birth years for your sign are " + nextYears);
+  break;
+ case 4:
+ echo("Your Chinese Zodiac Year is the Rat. The next birth years for your sign are " + nextYears);
+  break;
+ case 5:
+ echo("Your Chinese Zodiac Year is the Ox. The next birth years for your sign are " + nextYears);
+  break;
+ case 6:
+ echo("Your Chinese Zodiac Year is the Tiger. The next birth years for your sign are " + nextYears);
+  break;
+ case 7:
+ echo("Your Chinese Zodiac Year is the Rabbit. The next birth years for your sign are " + nextYears);
+  break;
+ case 8:
+ echo("Your Chinese Zodiac Year is the Dragon. The next birth years for your sign are " + nextYears);
+  break;
+ case 9:
+ echo("Your Chinese Zodiac Year is the Snake. The next birth years for your sign are " + nextYears);
+  break;
+ case 10:
+ echo("Your Chinese Zodiac Year is the Horse. The next birth years for your sign are " + nextYears);
+  break;
+ case 11:
+ echo("Your Chinese Zodiac Year is the Goat. The next birth years for your sign are " + nextYears);
+  break;
+   default:
+     echo("Please enter a year after 1985.");
+}
+ }) ();
+ </script>
+</body>
+</html>
