@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+	function test_prime(i) {
+
+		if (i === 1) {
+			return false;
+		} else if (i === 2) {
+			return true;
+		} else {
+			for (var x = 2; x < i; x++) {
+				if (i % x === 0) {
+					return false;
+				}
+			}
+			return true;
+		}
+	}
+
+	for (var i = 0; i <= 100; i++) {
+		if (test_prime(i) = false) {
+		echo(i "false");
+	} else if (test_prime(i) = true) {
+		echo(i "true");
+	}
+	
+ 
+ </script>
+</body>
+</html>
