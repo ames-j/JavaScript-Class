@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+   const javaScriptClass = {
+	title: "JavaScript Class",
+	instructor: "Data Mania",
+	students: []
+	enroll: function(student) {
+	students.push(student);
+	}
+	}
+	
+	const title = javaScriptClass.title;
+	const instructor = javaScriptClass["instructor"];
+	
+	const pythonClass = new Course("Python Class", "Data Mania");
+	
+	function Course(title, instructor) {
+	this.title = title;
+	this.instructor = instructor;
+	this.students = [];
+	this.enroll = function(student) {
+	this.students.push(student);
+	}
+	}
+	
+	
+ </script>
+</body>
+</html>
