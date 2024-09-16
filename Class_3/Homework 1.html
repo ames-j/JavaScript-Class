@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>A sample page</title>
+  <script src="helper.js"></script>
+</head>
+
+<body>
+  <div id="main">
+
+  </div>
+  <script>
+	let hours = window.prompt("Enter a number.");
+	let today = new Date();
+	let convertHours = parseInt(hours);
+	let elapsedTime = today.getHours() + convertHours + ":" + today.getMinutes();
+	let dayFactor = parseInt((today.getHours() + convertHours) / 24);
+		
+	if (today.getHours() + convertHours >= 24) {
+	echo((today.getHours() + convertHours) - (24 * dayFactor)+ ":" + today.getMinutes());
+	} else {
+	echo(elapsedTime);
+	}
+  </script>
+</body>
+</html>
