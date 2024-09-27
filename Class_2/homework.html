@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>A sample page</title>
+  <script src="helper.js"></script>
+</head>
+<body>
+  <div id="main">
+
+  </div>
+  <script>
+    const birthdayPrompt = window.prompt('What is your birth date?');
+	const today = new Date();
+	const birthDate = new Date(birthdayPrompt);
+	let ageMilseconds = birthDate.getTime();
+	let dayAge = (today.getTime() - ageMilseconds) / 86400000;
+	let answer = Math.floor(dayAge);
+	echo(answer);
+  </script>
+</body>
+</html>

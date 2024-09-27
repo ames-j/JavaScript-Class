@@ -10,12 +10,12 @@
 
  </div>
  <script>
-   var v = 10
-   
-   echo(16/2*(5+3));
-   echo(3/2 + 128);
-   echo(v + 5);
-   console.log("Foo, bar.");
+   var d = new Date('July 4, 1776');
+   var day = d.getDay();
+   if (day == "4") {
+   echo("Thursday");
+   }
+   console.log(day);
  </script>
 </body>
 </html>
